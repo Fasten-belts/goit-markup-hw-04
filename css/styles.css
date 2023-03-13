@@ -8,7 +8,7 @@
   --second-color-paraagraph: #e7e9fc;
   --button-color: #4d5ae5;
   --hover-color: #404bbf;
-  --card-interval: 24px;
+  /* --card-interval: 24px; */
 }
 
 html {
@@ -159,6 +159,12 @@ body {
   padding-bottom: 188px;
 
   background-color: var(--second-color-background);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
 }
 
 .hero .hero-headline {
@@ -327,28 +333,35 @@ body {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-interval));
+  /* margin-left: calc(-1 * var(--card-interval)); */
+  align-items: center;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.benefits {
+  display: flex;
+  gap: 24px;
 }
 
-.card-set > .box-item {
+/* .card-set > .box-item {
   margin-left: var(--card-interval);
   flex-basis: calc(100% / 4 - var(--card-interval));
-}
+} */
 
-.card-set > .box-image {
+/* .card-set > .box-image {
   margin-left: var(--card-interval);
   flex-basis: calc(100% / 3 - var(--card-interval));
   margin-bottom: 24px;
-}
+} */
 
-.card-set > .box-image:nth-last-child(-n + 3) {
+/* .card-set > .box-image:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
+} */
 
-.card-set > .benefits-list {
+/* .card-set > .benefits-list {
   margin-left: var(--card-interval);
   flex-basis: calc(100% / 4 - var(--card-interval));
-}
+} */
 
 /*------------------- Footer ------------------*/
 .page-footer {
