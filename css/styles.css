@@ -11,15 +11,6 @@
   /* --card-interval: 24px; */
 }
 
-/* html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-} */
-
 /*-------------- clear styles --------- */
 ul,
 ol {
@@ -73,18 +64,11 @@ body {
   gap: 40px;
 }
 
-/* .site-nav .page-navigation + .page-navigation {
-  margin-left: 24px;
-} */
-
 .contact-nav {
   display: flex;
   gap: 40px;
 }
 
-/* .contact-nav .contact-link + .contact-link {
-  margin-left: 40px;
-} */
 .navigation {
   display: flex;
   align-items: center;
@@ -140,6 +124,7 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .site-nav .page:hover,
@@ -217,6 +202,10 @@ body {
   line-height: 1.5;
   border-radius: 4px;
   border: 1px solid #e7e9fc;
+  letter-spacing: 0.04em;
+}
+.section.portfolio-section {
+  padding-top: 96px;
 }
 
 .button-portfolio:hover,
@@ -244,7 +233,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 84px;
+  margin-bottom: 72px;
   justify-content: center;
   gap: 24px;
 }
@@ -333,7 +322,6 @@ body {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  /* margin-left: calc(-1 * var(--card-interval)); */
   align-items: center;
   column-gap: 24px;
   row-gap: 48px;
@@ -365,7 +353,7 @@ body {
 .page-footer .logo {
   display: block;
   align-items: center;
-  margin-bottom: 17.5px;
+  margin-bottom: 18px;
 
   color: var(--third-color-background);
   font-family: 'Raleway';
