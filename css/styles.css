@@ -70,7 +70,7 @@ body {
 .site-nav {
   display: flex;
   margin-left: 76px;
-  gap: 24px;
+  gap: 40px;
 }
 
 /* .site-nav .page-navigation + .page-navigation {
