@@ -257,7 +257,6 @@ body {
 .section {
   padding: 120px 0;
 
-  background-color: var(--main-color-background);
   color: var(--main-color-paragraph);
 }
 
