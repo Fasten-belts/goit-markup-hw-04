@@ -51,7 +51,7 @@ body {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -142,14 +142,17 @@ body {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
 
   background-color: var(--second-color-background);
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero .hero-headline {
@@ -227,6 +230,11 @@ body {
   border-left: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
 }
+.portfolio:hover {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 /* ------- Button Set -------- */
 .button-set {
@@ -258,7 +266,7 @@ body {
 }
 
 .person {
-  padding: 24px 5px;
+  padding: 24px 5px 32px;
   background-color: var(--main-color-background);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -293,6 +301,7 @@ body {
 
 .title.no-padding {
   padding: 0;
+  padding-top: 8px;
 }
 
 .title {
@@ -313,6 +322,7 @@ body {
 }
 .section-title-text {
   font-size: 16px;
+  margin-bottom: 8px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -334,6 +344,10 @@ body {
 .card-set > .box-image {
   width: calc((100% - 48px) / 3);
 }
+
+.card-set > .customer {
+  width: calc((100% - 120px) / 6);
+}
 /* ====== Benefits ====== */
 .benefits {
   display: flex;
@@ -344,6 +358,69 @@ body {
   width: calc((100% - 72px) / 4);
 }
 
+.benefits-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.benefits-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
+/*--------------- Our Team --------------*/
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+.social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #f4f4fd;
+}
+.social-icon {
+  width: 16px;
+  height: 16px;
+}
+.social-link:hover {
+  background-color: #404bbf;
+}
+/* --------- Customers--------- */
+
+.customer-logo {
+  fill: #afb1b8;
+  width: 104px;
+  height: 56px;
+}
+.customer-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.customer-list:hover {
+  border-color: #404bbf;
+}
+.customer-list:hover .customer-logo {
+  fill: #404bbf;
+}
 /*------------------- Footer ------------------*/
 .page-footer {
   background-color: var(--second-color-background);
@@ -371,4 +448,33 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
+}
+
+.social-list {
+  display: flex;
+  align-items: start;
+}
+
+.footer-page {
+  display: flex;
+  gap: 120px;
+}
+.footer-title {
+  margin-bottom: 16px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.social-link.footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon.footer {
+  width: 24px;
+  height: 24px;
+}
+
+.social-item.footer:hover {
+  background-color: rgba(49, 208, 170, 1);
+  border-radius: 50%;
 }
