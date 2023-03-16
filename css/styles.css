@@ -8,7 +8,6 @@
   --second-color-paraagraph: #e7e9fc;
   --button-color: #4d5ae5;
   --hover-color: #404bbf;
-  /* --card-interval: 24px; */
 }
 
 /*-------------- clear styles --------- */
@@ -84,7 +83,11 @@ body {
 
 /*----------------- Header -----------------*/
 .page-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header .logo,
@@ -108,8 +111,6 @@ body {
 
 .site-nav .page {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
 
   color: var(--main-color-headline);
   font-style: normal;
@@ -143,6 +144,8 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: var(--second-color-background);
   background-image: linear-gradient(
