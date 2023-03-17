@@ -234,7 +234,7 @@ body {
   border-bottom: 1px solid #e7e9fc;
 }
 .portfolio:hover {
-  border: 1px solid #f4f4fd;
+  /* border: 1px solid #f4f4fd; */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -408,7 +408,7 @@ body {
   width: 104px;
   height: 56px;
 }
-.customer-list {
+.customer-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -417,10 +417,12 @@ body {
   border: 1px solid #8e8f99;
   border-radius: 4px;
 }
-.customer-list:hover {
+.customer-link:hover,
+.customer-link:focus {
   border-color: #404bbf;
 }
-.customer-list:hover .customer-logo {
+.customer-link:hover .customer-logo,
+.customer-link:focus .customer-logo {
   fill: #404bbf;
 }
 /*------------------- Footer ------------------*/
@@ -459,7 +461,6 @@ body {
 
 .footer-page {
   display: flex;
-  /* gap: 120px; */
 }
 .footer-logo {
   margin-right: 120px;
